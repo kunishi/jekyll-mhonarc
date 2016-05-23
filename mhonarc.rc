@@ -1,0 +1,123 @@
+<UMASK>
+022
+</UMASK>
+<DefineVar>
+YEAR
+1900
+</DefineVar>
+
+<TITLE chop>
+メーリングリストアーカイブ ($YEAR$年)
+</TITLE>
+
+<TTITLE>
+メーリングリストアーカイブ(スレッド順)
+</TTITLE>
+
+<NoMailto>
+<ModifyBodyAddresses>
+<NoSpamMode>
+<NoThread>
+<NOPRINTXCOMMENTS>
+
+</MSGPREFIX>
+
+<MAILTOURL>
+mailto:$TOADDRNAME$&#64;$TOADDRDOMAIN$
+</MAILTOURL>
+
+<Excs>
+authentication-results
+delivered-to
+disposition-notification-to
+dkim-
+domainkey-
+in-reply-to
+list-
+mailing-list
+mbox-line
+references
+sender
+thread-index
+user-agent
+</Excs>
+
+<FieldOrder>
+from
+to
+subject
+date
+-extra-
+</FieldOrder>
+
+<TextEncode>
+utf-8; MHonArc::UTF8::to_utf8; MHonArc/UTF8.pm
+</TextEncode>
+
+<CharsetConverters override>
+default; mhonarc::htmlize
+</CharsetConverters>
+
+<TextClipFunc>
+MHonArc::UTF8::clip; MHonArc/UTF8.pm
+</TextClipFunc>
+
+<MsgSep>
+^From\s+(?:"[^"]+"@\S+|\S+)\s+\S+\s+\S+\s+\d+\s+\d+:\d+:\d+\s+\d+
+</MsgSep>
+
+<SSMARKUP>
+---
+layout: post
+date: $MSGLOCALDATE(CUR;%Y-%m-%d %H:%M:%S +0900)$
+title: "$SUBJECTNA$"
+from: "$FROM$"
+---
+</SSMARKUP>
+
+<IdxPgBegin>
+</IdxPgBegin>
+
+<IdxPgEnd>
+</IdxPgEnd>
+
+<ListBegin>
+</ListBegin>
+
+<TIdxPgBegin>
+</TIdxPgBegin>
+
+<TIdxPgEnd>
+</TIdxPgEnd>
+
+<MsgPgBegin>
+
+</MsgPgBegin>
+
+<TopLinks>
+
+</TopLinks>
+
+<NextButton chop>
+</NextButton>
+
+<NextButtonIA chop>
+</NextButtonIA>
+
+<PrevButton chop>
+</PrevButton>
+
+<PrevButtonIA chop>
+</PrevButtonIA>
+
+<SubjectHeader>
+
+</SubjectHeader>
+
+<MsgBodyEnd>
+
+</MsgBodyEnd>
+
+<MsgPgEnd>
+
+</MsgPgEnd>
